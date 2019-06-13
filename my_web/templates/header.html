@@ -1,0 +1,64 @@
+<nav class="nav navbar-inverse navbar-expand-md bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="{% url "bbs:post_list" %}"><span class="glyphicon glyphicon-globe"></span> Leo的小伙伴们</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav justify-content-center nav-pills ">
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url "bbs:post_list" %}">BBS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "bbs:write_post" %}">BBS发布</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "resources:resources_list" %}">资料下载</a>
+            </li>
+            <li>
+                <a class="nav-link" href="{% url "blog:blog_home" %}">学习笔记</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    传送门
+                </a>
+                <div class="dropdown-menu" aria-labelledby="about-us">
+                    <a class="dropdown-item" href="https://cxk.ssrr.one/">cxk打篮球</a>
+                    <a class="dropdown-item" href="https://cybermap.kaspersky.com">cybermap</a>
+                    <a class="dropdown-item" href="http://geektyper.com">geektyper</a>
+                    <a class="dropdown-item" href="http://scp-wiki-cn.wikidot.com">scp基金会</a>
+                    <a class="dropdown-item" href="http://hao.199it.com">bigggggdata</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    其他
+                </a>
+                <div class="dropdown-menu" aria-labelledby="about-us">
+                    {% if user.is_authenticated %}
+                        <a class="dropdown-item" href="{% url "usermanage:logout" %}">退出登陆</a>
+                        <a class="dropdown-item">{{ user.username }}</a>
+                    {% else %}
+                        <a class="dropdown-item" href="{% url "usermanage:login" %}">登陆</a>
+                    {% endif %}
+                </div>
+            </li>
+
+        <!-- Search -->
+        <form class="navbar-form navbar-right">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                    <input type="text" class="form-control" placeholder="搜索" />
+                </div>
+            </div>
+            <button type="button" class="btn btn-default">搜索</button>
+        </form>
+        </ul>
+
+    </div>
+</nav>

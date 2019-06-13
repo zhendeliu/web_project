@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}
+    首页
+{% endblock title %}
+
+
+{% block content %}
+    <div class="row mt-2">
+
+        {% for post in posts_list %}
+        <!-- 文章内容 -->
+        <div class="col-12" >
+        <!-- 卡片容器 -->
+            <div class="card h-100" >
+                <!-- 标题 -->
+                <h5 class="card-header">{{ post.title }}</h5>
+                <!-- 摘要 -->
+                <div class="card-body">
+                    <p class="card-text">{{ post.content|safe|slice:'50' }}...</p>
+                    <p""></p>
+                </div>
+                <!-- 注脚 -->
+                <div class="card-footer">
+                    <a href="{% url 'bbs:post_detail' post.id %}" >
+                        进入该贴</a>
+                    <span>
+                        <small class="col align-self-end" style="color: gray;">
+                            浏览： {{ post.total_views }} 次
+                        </small>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+
+    </div>
+    <div class="pagination row" style="text-align: center">
+        <div class="m-auto">
+            <span class="step-links">
+                {% if posts_list.has_previous %}
+                    <a href="?page=1" class="btn btn-success">
+                        &laquo;首页
+                    </a>
+                    <span>...</span>
+                    <a href="?page={{ posts_list.previous_page_number }}" class="btn btn-secondary">
+                        {{ posts_list.previous_page_number }}
+                    </a>
+                {% endif %}
+                <span class="current btn btn-danger btn-lg">
+                    {{ posts_list.number }}
+                </span>
+                {% if posts_list.has_next %}
+                    <a href="?page={{ posts_list.next_page_number }}" class="btn btn-secondary">
+                        {{ posts_list.next_page_number }}
+                    </a>
+                    <span>...</span>
+                    <a href="?page={{ posts_list.paginator.num_pages }}"
+                       class="btn btn-success"
+                    >
+                        末页 &raquo;
+{#                        {{ articles.paginator.num_pages }} &raquo;#}
+                    </a>
+                {% endif %}
+
+            </span>
+        </div>
+    </div>
+
+
+{% endblock content %}
+

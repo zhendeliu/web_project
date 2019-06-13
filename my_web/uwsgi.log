@@ -1,0 +1,492 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 10:34:22 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:63149 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Set PythonHome to /Users/zhendeliu/Documents/python/web_project
+Fatal Python error: initfsencoding: unable to load the file system codec
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000000113f055c0 (most recent call first):
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 10:35:58 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 4864
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:63164 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Set PythonHome to /Users/zhendeliu/Documents/python/web_project
+Fatal Python error: initfsencoding: unable to load the file system codec
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000000011783f5c0 (most recent call first):
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 10:39:14 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:63211 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Python main interpreter initialized at 0x7f8b1b504ce0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "my_web/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4183)
+spawned uWSGI worker 1 (pid: 4184, cores: 2)
+spawned uWSGI worker 2 (pid: 4185, cores: 2)
+spawned uWSGI worker 3 (pid: 4186, cores: 2)
+spawned uWSGI worker 4 (pid: 4187, cores: 2)
+spawned uWSGI http 1 (pid: 4188)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/1] 127.0.0.1 () {38 vars in 808 bytes} [Sun Jun  2 10:40:27 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/2] 127.0.0.1 () {38 vars in 754 bytes} [Sun Jun  2 10:40:28 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/3] 127.0.0.1 () {38 vars in 814 bytes} [Sun Jun  2 10:40:53 2019] GET /bbs => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/4] 127.0.0.1 () {38 vars in 755 bytes} [Sun Jun  2 10:40:53 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/5] 127.0.0.1 () {38 vars in 822 bytes} [Sun Jun  2 10:40:59 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/6] 127.0.0.1 () {38 vars in 761 bytes} [Sun Jun  2 10:40:59 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/7] 127.0.0.1 () {40 vars in 855 bytes} [Sun Jun  2 10:46:25 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/8] 127.0.0.1 () {42 vars in 815 bytes} [Sun Jun  2 10:46:25 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 10:51:26 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/9] 127.0.0.1 () {40 vars in 855 bytes} [Sun Jun  2 10:51:37 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/10] 127.0.0.1 () {42 vars in 815 bytes} [Sun Jun  2 10:51:37 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/11] 127.0.0.1 () {40 vars in 855 bytes} [Sun Jun  2 10:51:38 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4186|app: -1|req: -1/12] 127.0.0.1 () {42 vars in 815 bytes} [Sun Jun  2 10:51:38 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4185|app: -1|req: -1/13] 127.0.0.1 () {40 vars in 855 bytes} [Sun Jun  2 10:51:38 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/14] 127.0.0.1 () {42 vars in 815 bytes} [Sun Jun  2 10:51:39 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/15] 127.0.0.1 () {40 vars in 855 bytes} [Sun Jun  2 10:51:39 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/16] 127.0.0.1 () {42 vars in 815 bytes} [Sun Jun  2 10:51:39 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/17] 127.0.0.1 () {40 vars in 855 bytes} [Sun Jun  2 10:51:39 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4185|app: -1|req: -1/18] 127.0.0.1 () {42 vars in 815 bytes} [Sun Jun  2 10:51:39 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 10:57:00 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/19] 127.0.0.1 () {40 vars in 854 bytes} [Sun Jun  2 10:57:11 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/20] 127.0.0.1 () {42 vars in 814 bytes} [Sun Jun  2 10:57:11 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/21] 127.0.0.1 () {40 vars in 854 bytes} [Sun Jun  2 10:57:12 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4185|app: -1|req: -1/22] 127.0.0.1 () {42 vars in 814 bytes} [Sun Jun  2 10:57:12 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/23] 127.0.0.1 () {40 vars in 854 bytes} [Sun Jun  2 10:57:12 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/24] 127.0.0.1 () {42 vars in 814 bytes} [Sun Jun  2 10:57:12 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/25] 127.0.0.1 () {40 vars in 854 bytes} [Sun Jun  2 10:57:12 2019] GET /bbs/list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/26] 127.0.0.1 () {42 vars in 814 bytes} [Sun Jun  2 10:57:12 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 11:00:24 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun  2 23:38:07 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/27] 127.0.0.1 () {38 vars in 828 bytes} [Sun Jun  2 23:38:42 2019] GET /bbs/bbs/8/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/28] 127.0.0.1 () {38 vars in 764 bytes} [Sun Jun  2 23:38:42 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4187|app: -1|req: -1/29] 127.0.0.1 () {38 vars in 808 bytes} [Sun Jun  2 23:38:49 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4184|app: -1|req: -1/30] 127.0.0.1 () {38 vars in 754 bytes} [Sun Jun  2 23:38:49 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+Tue Jun  4 11:31:26 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Jun  4 11:31:26 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jun  4 11:33:22 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:53470 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Python main interpreter initialized at 0x7ffdded02480
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "my_web/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 47750)
+spawned uWSGI worker 1 (pid: 47751, cores: 2)
+spawned uWSGI worker 2 (pid: 47752, cores: 2)
+spawned uWSGI worker 3 (pid: 47753, cores: 2)
+spawned uWSGI worker 4 (pid: 47754, cores: 2)
+spawned uWSGI http 1 (pid: 47755)
+--- no python application found, check your startup logs for errors ---
+[pid: 47753|app: -1|req: -1/1] 127.0.0.1 () {38 vars in 694 bytes} [Tue Jun  4 11:33:47 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 47755)
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jun  4 11:36:12 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:53556 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Python main interpreter initialized at 0x7f82d1d04e30
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 47777)
+spawned uWSGI worker 1 (pid: 47778, cores: 2)
+spawned uWSGI worker 2 (pid: 47779, cores: 2)
+spawned uWSGI worker 3 (pid: 47780, cores: 2)
+spawned uWSGI worker 4 (pid: 47781, cores: 2)
+spawned uWSGI http 1 (pid: 47782)
+--- no python application found, check your startup logs for errors ---
+[pid: 47778|app: -1|req: -1/1] 127.0.0.1 () {38 vars in 694 bytes} [Tue Jun  4 11:36:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 47782)
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jun  4 11:39:45 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:53618 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Python main interpreter initialized at 0x7ff22e6022d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "./my_web/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "my_web/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 47803)
+spawned uWSGI worker 1 (pid: 47804, cores: 2)
+spawned uWSGI worker 2 (pid: 47805, cores: 2)
+spawned uWSGI worker 3 (pid: 47806, cores: 2)
+spawned uWSGI worker 4 (pid: 47807, cores: 2)
+spawned uWSGI http 1 (pid: 47808)
+--- no python application found, check your startup logs for errors ---
+[pid: 47807|app: -1|req: -1/1] 127.0.0.1 () {38 vars in 694 bytes} [Tue Jun  4 11:39:51 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 47807|app: -1|req: -1/2] 127.0.0.1 () {38 vars in 694 bytes} [Tue Jun  4 11:39:52 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 47807|app: -1|req: -1/3] 127.0.0.1 () {38 vars in 694 bytes} [Tue Jun  4 11:39:54 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 47808)
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jun  4 11:42:54 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:53650 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Python main interpreter initialized at 0x7fe238e02710
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "./my_web/wsgi.py", line 11, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "my_web/wsgi.py", line 11, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 47843)
+spawned uWSGI worker 1 (pid: 47844, cores: 2)
+spawned uWSGI worker 2 (pid: 47845, cores: 2)
+spawned uWSGI worker 3 (pid: 47846, cores: 2)
+spawned uWSGI worker 4 (pid: 47847, cores: 2)
+spawned uWSGI http 1 (pid: 47848)
+--- no python application found, check your startup logs for errors ---
+[pid: 47844|app: -1|req: -1/1] 127.0.0.1 () {38 vars in 694 bytes} [Tue Jun  4 11:42:57 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 47848)
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jun  4 11:49:53 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 02 June 2019 00:21:42
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: ZHENDEdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/zhendeliu/Documents/python/web_project/my_web
+writing pidfile to uwsgi.pid
+detected binary path: /Users/zhendeliu/Documents/python/web_project/flask_web1/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/zhendeliu/Documents/python/web_project/my_web
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:53771 (port auto-assigned) fd 3
+Python version: 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)  [Clang 6.0 (clang-600.0.57)]
+Set PythonHome to /Users/zhendeliu/Documents/python/web_project/flask_web1
+Python main interpreter initialized at 0x7f9e5440a920
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f9e5440a920 pid: 47961 (default app)
+mountpoint  already configured. skip.
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 47961)
+spawned uWSGI worker 1 (pid: 47965, cores: 2)
+spawned uWSGI worker 2 (pid: 47966, cores: 2)
+spawned uWSGI worker 3 (pid: 47967, cores: 2)
+spawned uWSGI worker 4 (pid: 47968, cores: 2)
+spawned uWSGI http 1 (pid: 47969)
+[pid: 47968|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 693 bytes} [Tue Jun  4 11:50:07 2019] GET / => generated 8599 bytes in 1877 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 47968|app: 0|req: 3/2] 127.0.0.1 () {40 vars in 751 bytes} [Tue Jun  4 11:50:09 2019] GET /static/popper/popper-1.14.4.js => generated 77 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+[pid: 47968|app: 0|req: 3/3] 127.0.0.1 () {40 vars in 756 bytes} [Tue Jun  4 11:50:09 2019] GET /static/md_css/monokai.css => generated 77 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 1)
+[pid: 47967|app: 0|req: 2/5] 127.0.0.1 () {40 vars in 733 bytes} [Tue Jun  4 11:50:09 2019] GET /static/layer/layer.js => generated 77 bytes in 37 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 47967|app: 0|req: 2/5] 127.0.0.1 () {40 vars in 749 bytes} [Tue Jun  4 11:50:09 2019] GET /static/jquery/jquery-3.3.1.js => generated 77 bytes in 37 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 47968|app: 0|req: 4/6] 127.0.0.1 () {40 vars in 743 bytes} [Tue Jun  4 11:50:26 2019] GET /bbs/9/ => generated 9701 bytes in 2221 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 47968|app: 0|req: 5/7] 127.0.0.1 () {38 vars in 708 bytes} [Tue Jun  4 11:50:29 2019] GET /static/md_css/monokai.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 47968|app: 0|req: 7/9] 127.0.0.1 () {38 vars in 703 bytes} [Tue Jun  4 11:50:29 2019] GET /static/popper/popper-1.14.4.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 1)
+[pid: 47968|app: 0|req: 7/10] 127.0.0.1 () {38 vars in 707 bytes} [Tue Jun  4 11:50:29 2019] GET /static/ckeditor/ckeditor-init.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 47967|app: 0|req: 3/10] 127.0.0.1 () {38 vars in 685 bytes} [Tue Jun  4 11:50:29 2019] GET /static/layer/layer.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 47967|app: 0|req: 4/11] 127.0.0.1 () {40 vars in 770 bytes} [Tue Jun  4 11:50:29 2019] GET /static/ckeditor/ckeditor/ckeditor.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+[pid: 47966|app: 0|req: 1/12] 127.0.0.1 () {38 vars in 701 bytes} [Tue Jun  4 11:50:29 2019] GET /static/jquery/jquery-3.3.1.js => generated 77 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 47968|app: 0|req: 8/13] 127.0.0.1 () {38 vars in 665 bytes} [Tue Jun  4 11:50:29 2019] GET /favicon.ico => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 47969)
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
